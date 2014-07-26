@@ -1,4 +1,4 @@
-Ruby-Data-Structures Created 07/25/2014
+Ruby-Data-Structures
 ====================
 Created 07/25/2014
 
