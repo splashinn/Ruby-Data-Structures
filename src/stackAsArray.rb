@@ -39,3 +39,40 @@ class RubyDataStructures::StackAsArray
   end
 
   # Pops the stack
+  def pop
+    raise "The stack is empty" if self.empty?
+
+    x = @array[@top]
+    if self.singleton?
+      @top = nil
+    else
+      @top = @top - 1
+    end
+
+    return x
+  end
+
+  # Resets stack
+  def reset
+    @array = Array.new(@length)
+    @top = nil
+  end
+
+  def size
+    @array.size
+  end
+
+  def first
+    @array.first
+  end
+
+  def last
+    @array[@top]
+  end
+
+  def each
+    @array.each do
+      yield
+    end
+  end
+end
