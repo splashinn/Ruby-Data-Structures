@@ -128,3 +128,20 @@ def ring(bell, n)
 	end
 end
 
+
+# Arrays
+
+# Empty arrays:
+[]
+
+Array.new
+
+# Building an array:
+[1, 2, 3, 4, 5]
+
+# Looking up data in arrays:
+[1, 2, 3, 4, 5][2] # would return 3
+
+# Array indexes can also be looked up from the end of the array using negative numbers:
+[1, 2, 3, 4, 5, 6][-2]
+
