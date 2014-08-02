@@ -145,3 +145,15 @@ Array.new
 # Array indexes can also be looked up from the end of the array using negative numbers:
 [1, 2, 3, 4, 5, 6][-2]
 
+# Growing arrays:
+[1, 2, 3, 4, 5] << "woot"
+
+[1, 2, 3, 4, 5].push"woot"
+
+# Transforming arrays:
+[1, 2, 3, 4, 5].map {|i| i + 1}
+
+# Filtering the elements of an array:
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].select {|number| number % 2 == 0} # selects all the even numbers
+
+# 
