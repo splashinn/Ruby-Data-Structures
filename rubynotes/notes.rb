@@ -62,3 +62,62 @@ puts "The number #{a} is less than #{b}"
 
 # Boolean expressions:
 
+# Combining Expressions:
+age >= 23 && (name == 'Bob' || name == 'Jill')
+
+# Negating expressions:
+! (name == 'Kyle')
+
+
+# if..else construct:
+
+# if..else example:
+def check_sign(number)
+	if number > 0
+		"#{number} is positive"
+	else
+		"#{number} is negative"
+	end
+end
+
+# Using elsif:
+def check_sign(number)
+	if number > 0
+		"#{number} is positive"
+	elsif number == 0
+		"#{number} is 0"
+	else number < 0
+		"#{number} is negative"
+	end
+end
+
+# Unless example:
+age = 10 
+unless abe >= 18
+	puts "Sorry, you have to be 18 to enter."
+end
+
+# The ternary operator:
+def check_sign(number)
+	number > 0 ? "#{number} is positive" : "#{number} is negative"
+end
+
+
+# Loops in Ruby
+
+# Infinite loops:
+loop do 
+	puts "This loop will be executed forever."
+end
+
+# Break an infinite loop:
+loop do
+	monk.meditate
+	break if monk.nirvana?
+end
+
+# Run a block of code N times:
+5.times do 
+	puts "Kyle"
+end
+
