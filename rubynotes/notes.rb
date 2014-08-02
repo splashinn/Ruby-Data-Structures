@@ -121,3 +121,10 @@ end
 	puts "Kyle"
 end
 
+# Another example:
+def ring(bell, n)
+	n.times do
+		bell.ring
+	end
+end
+
