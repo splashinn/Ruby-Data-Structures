@@ -156,4 +156,23 @@ Array.new
 # Filtering the elements of an array:
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].select {|number| number % 2 == 0} # selects all the even numbers
 
-# 
+names = ["Kyle", "Tina", "Nipsey", "Oslit", "Orphious"]
+names.select {|word| word.length > 5}
+
+# Deleting elements
+[1, 3, 4, 5, 6, 7].delete 5
+
+[1, 2, 3, 4, 5, 6, 7, 8].delete_if{|i| i < 4}
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].delete_if{|i| i % 2 == 0}
+
+
+
+# Iterations
+
+# For loops:
+array = [1, 2, 3, 4, 5]
+for i in array
+	puts i
+end # prints all values in array
+
