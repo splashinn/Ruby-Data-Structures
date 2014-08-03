@@ -176,3 +176,61 @@ for i in array
 	puts i
 end # prints all values in array
 
+def array_copy(source)
+  destination = []
+  for number in source
+    # Add number to destination if number is less than 4
+    destination << number if number < 4
+  end
+  return destination
+end
+
+# Looping with each
+array = [1, 2, 3, 4, 5]
+array.each do |i|
+	puts i 
+end
+
+def array_copy(source)
+  destination = []
+  source.each do |number|
+    # Add number to destination if number is less than 4
+    destination << number if number < 4
+  end
+  return destination
+end
+
+
+# Hashes
+
+# Creating a hash 
+restaurant_menu = {
+  "Ramen" => 3,
+  "Dal Makhani" => 4,
+  "Tea" => 2
+  }
+end
+
+# Fetching values from an array:
+restaurant_menu["Ramen"]
+
+# Modifying a hash:
+restaurant_menu = {}
+restaurant_menu["Dal Makhani"] = 4.5
+restaurant_menu["Tea"] = 2
+
+# Iterating over a hash 
+restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
+restaurant_menu.each do | item, price |
+  puts "#{item}: $#{price}"
+end
+
+restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
+restaurant_menu.each do |item, price|
+  restaurant_menu[item] = price + (price * 0.1)
+end # raises the price by 10%
+
+# Extracting the keys and values from a hash:
+restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
+restaurant_menu.keys
+
