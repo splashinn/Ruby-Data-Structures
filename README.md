@@ -1,6 +1,3 @@
-Ruby-Data-Structures
-====================
-Created 07/25/2014
+# Ruby Data Structures
 
-Data structures in Ruby
-- stack as array (not complete)
+Examples of data structures using Ruby
